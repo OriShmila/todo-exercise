@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 
 export const MONGO_URI =
-  process.env.MONGO_DATABASE_URL ||
-  `mongodb+srv://admin:Aa123456@cluster0.0ufnp.mongodb.net/todoExercise?retryWrites=true&w=majority`;
+  process.env.MONGO_DATABASE_URL;
 
 export const mongoOptions = {
   useNewUrlParser: true,
